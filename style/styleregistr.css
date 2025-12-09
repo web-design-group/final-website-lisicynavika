@@ -1,0 +1,276 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+.content-80 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    padding: 0.2rem 0.6rem !important;
+    transition: color 0.2s, text-decoration 0.2s;
+	font-family: 'MyFont';
+	font-size: clamp(10px, 1vw, 16px);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ABC270;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ABC270;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 60px; 
+    height: 60px;
+    display: block;
+    background-image: url('../images/registr/logo/logo.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.logo-link:hover .logo-img{
+	background-image: url('../images/registr/logo/hover.png');
+}
+.logo-link:active .logo-img {
+    background-image: url('../images/registr/logo/active.png'); 
+}
+
+.full-width-dog-bg {
+    background-image: url('../images/registr/dog.png'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    background-color: white; 
+    width: 100%;
+    height: 0; 
+    padding-bottom: 30%; 
+    min-height: 200px; 
+	margin-left: -10%;
+    position: relative; 
+}
+
+.speech-bubble {
+    background: none;
+    color: black; 
+    padding: 0;
+    border-radius: 0;
+    position: absolute;
+    top: 30%; 
+	right: 24%;
+    width: 25%; 
+	max-width: 300px; 
+    font-size: clamp(8px, 1vw, 30px);
+    line-height: 1.4;
+    text-align: left;
+	font-family: 'MyFont';
+	font-weight: normal;
+    font-style: normal;
+}
+
+.separator-line {
+    height: 20px;
+    background-color: #ABC270;
+    width: 100%;
+    margin-top: 0;
+}
+
+.registration-section {
+    background-image: url('../images/registr/pattern.png'); 
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 40px 0 80px 0;
+}
+
+.registration-title {
+    color: black;
+	font-size: clamp(24px, 2vw, 36px);
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+	font-family: 'MyFont';
+}
+
+.form-control {
+    border-radius: 50px; 
+    border: 3px solid #ABC270;
+    padding: 10px 20px;
+	font-family: 'MyFont';
+	font-size: clamp(16px, 2vw, 18px);
+	color:#ABC270;
+}
+.form-control::placeholder { 
+    color: #ABC270;
+    opacity: 1; 
+}
+
+.form-control:focus {
+    border-color: #ABC270; 
+    box-shadow: none; 
+    outline: none; 
+}
+
+.file-upload-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.custom-paperclip-icon {
+    width: 24px; 
+    height: 24px;
+    display: block;
+    background-image: url('../images/registr/skrepka/skrepka.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.1s ease;
+}
+
+.file-upload-label:hover .custom-paperclip-icon {
+    background-image: url('../images/registr/skrepka/hover.png');
+}
+
+.file-upload-label:active .custom-paperclip-icon {
+    background-image: url('../images/registr/skrepka/active.png');
+}
+
+.register-button {
+    background: none; 
+    width: 280px; 
+    height: 100px; 
+    color: white; 
+    font-size: 1.1rem; 
+    font-weight: bold;
+    text-transform: uppercase;
+	font-family: 'MyFont';
+    background-image: url('../images/registr/bones/bone.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    transition: background-image 0.1s ease;
+}
+
+.register-button:hover {
+    background-image: url('../images/registr/bones/hover.png');
+}
+
+.register-button:active {
+    background-image: url('../images/registr/bones/active.png');
+}
+
+.footer {
+    background-color: #FEC868;
+    color: black;
+    padding: 30px 0;
+}
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+.footer .icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+	font-family: 'MyFont';
+	font-size: clamp(14px, 1vw, 18px);
+}
+
+.footer .social-icon,
+.footer .static-icon {
+    width: 24px; 
+    height: 24px; 
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0; 
+    margin-right: 10px;
+    transition: background-image 0.1s ease; 
+}
+
+.footer-geo {
+	align-items: flex-start;
+}
+
+.footer-geo .static-icon {
+    background-image: url('../images/registr/contacts/geo.png');
+	margin-top: -40px;
+}
+
+.footer-phone .static-icon {
+    background-image: url('../images/registr/contacts/phone.png');
+}
+
+.social-vk .social-icon {
+    background-image: url('../images/registr/contacts/vk/vk.png');
+}
+.social-vk:hover .social-icon {
+    background-image: url('../images/registr/contacts/vk/hover.png');
+}
+.social-vk:active .social-icon {
+    background-image: url('../images/registr/contacts/vk/active.png');
+}
+
+.social-tg .social-icon {
+    background-image: url('../images/registr/contacts/tg/tg.png');
+}
+.social-tg:hover .social-icon {
+    background-image: url('../images/registr/contacts/tg/hover.png');
+}
+.social-tg:active .social-icon {
+    background-image: url('../images/registr/contacts/tg/active.png');
+}
+
+.social-mail .social-icon {
+    background-image: url('../images/registr/contacts/email/email.png');
+}
+.social-mail:hover .social-icon {
+    background-image: url('../images/registr/contacts/email/hover.png');
+}
+.social-mail:active .social-icon {
+    background-image: url('../images/registr/contacts/email/active.png');
+}
+
+.footer-logo-img {
+    width: 60px; 
+    height: 60px; 
+    display: block;
+    background-image: url('../images/registr/logo/logo.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.footer-logo-link:hover .footer-logo-img{
+ background-image: url('../images/registr/logo/hover.png');
+}
+.footer-logo-link:active .footer-logo-img {
+    background-image: url('../images/registr/logo/active.png'); 
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../images/registr/fonts/SamsungSharpSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont1';
+    src: url('../images/registr/fonts/aeroport-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
